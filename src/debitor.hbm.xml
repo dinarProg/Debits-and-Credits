@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Model.Debitor" table="DEBITORS">
+        <id name="id" type="integer" column="ID_DEBITOR">
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string" column="NAME" />
+        <property name="adress" type="string" column="ADRESS" />
+        <property name="phone" type="string" column="PHONE" />
+        <property name="data" type="date" column="DATA_REG" />
+    </class>
+</hibernate-mapping>

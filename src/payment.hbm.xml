@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Model.Payment" table="PAYMENTS">
+        <id name="id" type="integer" column="ID_PAYMENT">
+            <generator class="assigned" />
+        </id>
+        <property name="idCredit" type="integer" column="ID_CREDIT" />
+        <property name="amount" type="double" column="AMOUNT" />
+        <property name="paymentData" type="date" column="PAYMENTDATE" />
+    </class>
+</hibernate-mapping>

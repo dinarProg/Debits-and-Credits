@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Model.Credit" table="CREDITS">
+        <id name="id" type="integer" column="ID_CREDIT">
+            <generator class="assigned" />
+        </id>
+        <property name="idDebitor" type="integer" column="ID_DEBITOR" />
+        <property name="amount" type="double" column="AMOUNT" />
+        <property name="balance" type="double" column="BALANCE" />
+        <property name="openData" type="date" column="OPENDATE" />
+    </class>
+</hibernate-mapping>
